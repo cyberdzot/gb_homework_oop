@@ -12,4 +12,9 @@ public class Dog extends Animal {
     public void speak() {
         System.out.printf("%s сказал: Гав!%n", getType());
     }
+
+    @Override
+    public void fly() {
+        // летать не умеем
+    }
 }

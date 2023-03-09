@@ -5,6 +5,10 @@ public class Animal {
     private final String color;
     private int legsCount;
 
+    /** описание тут
+     * @param name имя животины
+     * @param color цвет животины
+     */
     public Animal(String name, String color) {
         this.name = name;
         this.color = color;
@@ -13,24 +17,23 @@ public class Animal {
 
     public Animal(String color, int legsCount) {
         this("Безымянный", color);
-        this.legsCount = legsCount;
     }
 
     public Animal() {
         this("Безымянный", "чёрный");
     }
 
-    // добавление методов согласно заданию -----
+    // добавление методов согласно домашнему заданию -----
     public void toGo() {
-        System.out.printf("%s: двигается%n", getType());
+        System.out.printf("%s: побежал(а)%n", getType());
     }
 
     public void fly() {
-        System.out.printf("%s: летает%n", getType());
+        System.out.printf("%s: полетел(а)%n", getType());
     }
 
     public void swim() {
-        System.out.printf("%s: плавает%n", getType());
+        System.out.printf("%s: поплыл(а)%n", getType());
     }
     // -------------------------------------------
 

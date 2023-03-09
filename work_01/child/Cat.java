@@ -48,4 +48,13 @@ public class Cat extends Animal {
         System.out.printf("%s: уснул%n", getType());
     }
 
+    @Override
+    public void swim() {
+        // плавать не умеем
+    }
+
+    @Override
+    public void fly() {
+        // летать не умеем
+    }
 }

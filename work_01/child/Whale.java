@@ -12,4 +12,13 @@ public class Whale extends Animal {
         System.out.printf("%s сказал: бульк!%n", getType());
     }
     
+    @Override
+    public void toGo() {
+        // ходить не умеем
+    }
+
+    @Override
+    public void fly() {
+        // летать не умеем
+    }
 }

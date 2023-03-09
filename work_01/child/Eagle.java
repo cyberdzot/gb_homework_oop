@@ -12,4 +12,8 @@ public class Eagle extends Animal {
         System.out.printf("%s сказал: уии!%n", getType());
     }
     
+    @Override
+    public void swim() {
+        // плавать не умеем
+    }
 }
