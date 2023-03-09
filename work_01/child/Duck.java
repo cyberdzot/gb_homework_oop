@@ -11,8 +11,4 @@ public class Duck extends Animal {
     public void speak() {
         System.out.printf("%s сказал: Кря!%n", getType());
     }
-
-    public void fly() {
-        System.out.printf("%s полетел!%n", getType());
-    }
 }

@@ -24,8 +24,7 @@ public class Cat extends Animal {
     @Override
     public String toString() {
         return String.format(
-                "%s {name: %s,%ncolor: %s,%nlegs: %s;%n}", getType(), getName(), getColor(), getLegsCount()
-        );
+                "%s {name: %s,%ncolor: %s,%nlegs: %s;%n}", getType(), getName(), getColor(), getLegsCount());
     }
 
     private void wakeUp() {
