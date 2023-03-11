@@ -1,21 +1,23 @@
 package work_02.child;
 
-import work_02.parent.Animal;
+import work_02.parent.Diseaseable;
 import work_02.parent.Runnable;
 import work_02.parent.Speakable;
 import work_02.parent.Swimable;
 
-public class Doctor extends Animal implements Runnable, Speakable, Swimable {
+public class Doctor implements Diseaseable, Runnable, Speakable, Swimable {
     private final String name;
 
     public Doctor(String name, int legsCount) {
-        super("", legsCount);
         this.name = name;
     }
 
-    @Override
     public String getName() {
         return name;
+    }
+
+    public String getType() {
+        return this.getClass().getSimpleName();
     }
 
     @Override
@@ -25,7 +27,7 @@ public class Doctor extends Animal implements Runnable, Speakable, Swimable {
 
     @Override
     public int getSpeedSwim() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -34,5 +36,7 @@ public class Doctor extends Animal implements Runnable, Speakable, Swimable {
     }
 
     @Override
-    public void hunt() {}
+    public void getIll() {
+        System.out.printf("%s %s заболел простудой", getType(), getName());
+    }
 }

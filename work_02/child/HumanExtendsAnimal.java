@@ -1,6 +1,7 @@
 ﻿package work_02.child;
 
 import work_02.parent.Animal;
+import work_02.parent.Runnable;
 import work_02.parent.Speakable;
 import work_02.parent.Swimable;
 
@@ -8,7 +9,7 @@ import work_02.parent.Swimable;
  * Шуточный класс, в котором некий "человек"  наследует от животного его поведение и состояние.
  * Класс создан в учебных целях и не несёт в себе скрытых смыслов и оскорблений :)
  */
-public class HumanExtendsAnimal extends Animal implements Speakable, Swimable {
+public class HumanExtendsAnimal extends Animal implements Speakable, Swimable, Runnable {
     private final String name;
     private final int legsCount;
 
@@ -42,7 +43,11 @@ public class HumanExtendsAnimal extends Animal implements Speakable, Swimable {
 
     @Override
     public int getSpeedSwim() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSpeedSwim'");
+        return 6;
+    }
+
+    @Override
+    public int getSpeedRun() {
+        return 6;
     }
 }

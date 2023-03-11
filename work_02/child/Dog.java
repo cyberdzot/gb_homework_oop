@@ -1,9 +1,11 @@
 ﻿package work_02.child;
 
 import work_02.parent.Animal;
+import work_02.parent.Runnable;
 import work_02.parent.Speakable;
+import work_02.parent.Swimable;
 
-public class Dog extends Animal implements Speakable {
+public class Dog extends Animal implements Speakable, Runnable, Swimable {
 
     public Dog(String name, String color) {
         super(name, color);
@@ -22,5 +24,15 @@ public class Dog extends Animal implements Speakable {
         eat();
         toPlay();
         goToSleep();
+    }
+
+    @Override
+    public int getSpeedRun() {
+        return 30;
+    }
+
+    @Override
+    public int getSpeedSwim() {
+        return 3;
     }
 }
