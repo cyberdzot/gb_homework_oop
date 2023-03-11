@@ -2,12 +2,13 @@
 
 import work_02.parent.Animal;
 import work_02.parent.Speakable;
+import work_02.parent.Swimable;
 
 /**
  * Шуточный класс, в котором некий "человек"  наследует от животного его поведение и состояние.
  * Класс создан в учебных целях и не несёт в себе скрытых смыслов и оскорблений :)
  */
-public class HumanExtendsAnimal extends Animal implements Speakable {
+public class HumanExtendsAnimal extends Animal implements Speakable, Swimable {
     private final String name;
     private final int legsCount;
 
@@ -19,7 +20,7 @@ public class HumanExtendsAnimal extends Animal implements Speakable {
 
     @Override
     public void speak() {
-        System.out.printf("%s %s что-то говорит.%n", getType(), getName());
+        System.out.printf("%s %s что-то бормочет.%n", getType(), getName());
     }
 
     @Override
@@ -37,5 +38,11 @@ public class HumanExtendsAnimal extends Animal implements Speakable {
     @Override
     public int getLegsCount() {
         return legsCount;
+    }
+
+    @Override
+    public int getSpeedSwim() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSpeedSwim'");
     }
 }

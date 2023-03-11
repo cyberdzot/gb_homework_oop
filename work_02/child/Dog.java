@@ -11,7 +11,7 @@ public class Dog extends Animal implements Speakable {
 
     @Override
     public void speak() {
-        System.out.printf("%s сказал: Гав!%n", getType());
+        System.out.printf("%s гавкает!%n", getType());
     }
 
     @Override

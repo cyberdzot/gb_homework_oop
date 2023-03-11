@@ -10,7 +10,7 @@ public class Cat extends Animal implements Speakable {
 
     @Override
     public void speak() {
-        System.out.printf("%s сказал: Meow!%n", getType());
+        System.out.printf("%s мяукает!%n", getType());
     }
 
     @Override

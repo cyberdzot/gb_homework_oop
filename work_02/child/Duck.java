@@ -17,7 +17,7 @@ public class Duck extends Animal implements Speakable {
 
     @Override
     public void speak() {
-        System.out.printf("%s сказал: Кря!%n", getType());
+        System.out.printf("%s крякает!%n", getType());
     }
 
     @Override
