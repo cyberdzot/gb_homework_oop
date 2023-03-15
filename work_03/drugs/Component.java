@@ -37,6 +37,6 @@ public class Component {
 
     @Override
     public String toString() {
-        return "[Component] " + name + " (Доза: " + weight + "; Сила: " + power + ")";
+        return "Component{name='" + name + "\', weight='" + weight + "\', power=" + power + '}';
     }
 }

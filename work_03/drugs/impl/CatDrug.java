@@ -5,7 +5,7 @@ import java.util.List;
 import work_03.drugs.Component;
 import work_03.drugs.Drug;
 
-// лекарство для собак
+// лекарство для кошек
 public class CatDrug extends Drug {
 
     public CatDrug(List<Component> component) {

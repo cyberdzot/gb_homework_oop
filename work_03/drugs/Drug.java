@@ -16,7 +16,8 @@ public abstract class Drug implements Iterable<Component>, Comparable<Drug> {
         //     return -1;
         // else
         //     return 0;
-        // упрощение кода
+
+        // упрощённая конструкция для кода выше
         return Integer.compare(getDrugPower(), o.getDrugPower());
     }
 
@@ -45,8 +46,9 @@ public abstract class Drug implements Iterable<Component>, Comparable<Drug> {
         }
         return power;
     }
+
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + " {компоненты: " + components + ", сила: " + getDrugPower() + "}";
+        return this.getClass().getSimpleName() + " {компоненты: " + components + ", сила: " + getDrugPower() + "}\n";
     }
 }
