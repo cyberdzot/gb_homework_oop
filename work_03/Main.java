@@ -22,12 +22,12 @@ public class Main {
         Component mediumWater = new Water("Вода", "40", 24);
         Component highWater = new Water("Вода", "80", 48);
 
-        Component lowPenicillin = new Penicillin("Пенициллин", "18", 12);
-        Component lowPenicillin2 = lowPenicillin;
-        Component lowPenicillin3 = lowPenicillin;
+        Component penicillin = new Penicillin("Пенициллин", "18", 12);
+        Component penicillinPlus = penicillin;
+        Component penicillinPro = new Penicillin("Пенициллин-Про", "18", 12);
 
         // компоненты для кошачьих лекарств
-        List<Component> componentsCat1 = List.of(lowPenicillin, mediumAzitron);
+        List<Component> componentsCat1 = List.of(penicillin, mediumAzitron);
         List<Component> componentsCat2 = List.of(lowWater, lowAzitron);
         List<Component> componentsCat3 = List.of(mediumWater, highAzitron);
         List<Component> componentsCat4 = List.of(highWater, highAzitron);
@@ -54,9 +54,9 @@ public class Main {
         // System.out.println(drugs);
         
         Set<Component> components = new HashSet<>();
-        components.add(lowPenicillin);
-        components.add(lowPenicillin2);
-        components.add(lowPenicillin3);
+        components.add(penicillin);
+        components.add(penicillinPro);
+        components.add(penicillinPlus);
 
         System.out.println(components);
     }
