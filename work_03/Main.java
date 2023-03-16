@@ -23,7 +23,7 @@ public class Main {
         Component highWater = new Water("Вода", "80", 48);
 
         Component penicillin = new Penicillin("Пенициллин", "18", 12);
-        Component penicillinPlus = penicillin;
+        Component penicillinPlus = new Penicillin("Пенициллин", "18", 12);
         Component penicillinPro = new Penicillin("Пенициллин-Про", "18", 12);
 
         // компоненты для кошачьих лекарств
